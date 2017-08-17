@@ -1,0 +1,27 @@
+/*custom css for the project computer fundamentals 
+ Creator : Tom Ramos Pedales;
+*/
+
+/*page: home*/
+
+/*font-face*/
+@font-face {
+    font-family: "Palace";
+    src: url('../fonts/palace.ttf');
+}
+/*end-font-face*/
+	.c_collapse{
+		background: white !important;
+	}
+	.c_cover{
+		transition: background 1s cubic-bezier(0, 0, 0.39, 0.93);
+	    display: table;
+	    width: 100%;
+	    text-align: center;
+	    color: #fff;
+	    height: 450px;
+	    padding: 0;
+    	background: url("../../images/Butuan_National_Museum_(Butuan,_Mindanao).jpg") no-repeat fixed center; 
+    	background-size: cover;
+	}
+/*end page*/

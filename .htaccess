@@ -1,0 +1,23 @@
+#SAMPLE
+#RewriteEngine On
+#RewriteBase /127.0.0.1/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond $1 !^(index\.php|images|robots\.txt|butuan.sql)
+#RewriteRule ^(.*)$ index.php/$1 [QSA]
+
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+# Set the rewritebase to your CI installation folder
+RewriteBase /butuan/
+
+
+# Send everything to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [QSA]
+
+</IfModule> 
